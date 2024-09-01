@@ -1,7 +1,10 @@
 #include "maze_factory.h"
+#include <iostream>
 
 int main() {
-    MazeFactory factory;
-    factory.generateMaze(10, 10);
+    // Call the function and output the JSON string
+    const char* json = generateObjectsJson();
+    std::cout << "Generated JSON: " << json << std::endl;
+
     return 0;
 }
